@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  font-family: 'Avenir', Helvetica, sans-serif;
 }
 
 html,
@@ -43,14 +43,55 @@ body {
   margin: 0;
 }
 
+.fixed_header tbody {
+  display:block;
+  overflow:auto;
+  height:500px;
+  width:100%;
+  text-align: left;
+}
+.fixed_header thead tr {
+  display:block;
+  text-align: left;
+}
+
+.description {
+  /* font-family: "Courier New", Courier, monospace; */
+  font-size: 2rem
+}
+
 /* This CSS styles the ufo icon in the navbar */
 .nav-ufo {
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  left: 175px;
   width: 35px;
   color: white;
 }
+
+.ufo-reporting {
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  width: 310px;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.ufo-reporting-envelop {
+  position: absolute;
+  right: 100px;
+  width: 30px;
+  color: white;
+  background-color: aliceblue
+}
+
+.table {
+  font-size: 1.7rem;
+}
+/* .table-head {
+  background-color: darkslategrey
+} */
 
 /* Adding styles to the aside and filter form */
 .ufo-form {
@@ -98,7 +139,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/ufo_pic.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -108,13 +149,15 @@ select {
   margin-top: 200px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
+  color:darkslategray;
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 4rem;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  color: darkslategray;
 }
 
 /* input placeholder color changes */
